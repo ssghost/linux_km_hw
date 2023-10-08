@@ -1,0 +1,1 @@
+make -C /lin/modules/`uname -r`/build M=$PWD
