@@ -1,5 +1,5 @@
 obj-m := hello.o
 
-all:make -C lib/modules/() M=$PWD modules
+all:make -C /lib/modules/`uname -r`/ M=$PWD modules
 
-clean:make -C /usr/src/linux-headers-5.15.0-60/ M=$PWD clean
+clean:make -C /lib/modules/`uname -r`/ M=$PWD clean
