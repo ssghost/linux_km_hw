@@ -1,5 +1,5 @@
 obj-m := hello.o
 
-all:make -C /lib/modules/`uname -r`/ M=$PWD modules
+all:make -C /lib/modules/`uname -r`/build M=$PWD modules
 
-clean:make -C /lib/modules/`uname -r`/ M=$PWD clean
+clean:make -C /lib/modules/`uname -r`/build M=$PWD clean
