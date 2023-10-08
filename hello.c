@@ -9,3 +9,5 @@ int init_module() {
 void cleanup_module () {
     printk(KERN_INFO "Sayonara!\n");
 }
+
+MODULE_LICENSE("GPL");
